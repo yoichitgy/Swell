@@ -38,7 +38,7 @@ public class ConsoleLocation: LogLocation {
 
     public func log(message: @autoclosure() -> String) {
         if enabled {
-            println(message())
+            NSLog("%@", message())
         }
     }
     
